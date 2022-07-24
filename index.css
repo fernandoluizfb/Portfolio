@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #AC0101;
+    color: white;
+    position: relative;
+    text-align: center;
+    font-family: 'Helvética';
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 600px;
+
+    overflow-x: hidden;
+
+}
+
+h1 {
+    color: white;
+    font-family: 'Helvética';
+
+    margin-bottom: 125px;
+    font-size: 40px;
+
+}
+
+.slide {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translate(100vw, 0);
+    transition: transform .5s;
+
+}
+
+.slide.slide-ativo {
+    transform: translate(0, 0);
+}
+
+.btn-proximo {
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    text-align: right;
+
+
+    background-color: transparent;
+    color: white;
+    border: none;
+
+    z-index: 2;
+    left: 0;
+
+
+}
+
+.foto {
+    width: 100%;
+    max-width: 500px;
+    max-height: 600px;
+    border-radius: 8px;
+}
+
+.escudo-milan > img {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 100px;
+
+    margin-bottom: 140px;
+
+}
+
+.primeiro-paragrafo{
+    margin-bottom: 50px;
+    font-size: 20px;
+    
+}
+
+.segundo-paragrafo {
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.terceiro-paragrafo {
+    margin-top: 50px;
+    font-size: 20px;    
+}
+
+.quarto-paragrafo {
+    margin-top: 50px;
+    margin-bottom: 300px;
+
+    font-size: 20px;   
+}
+
+.quinto-paragrafo {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.sexto-paragrafo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.herbert > img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.san-siro > img { 
+    width: 100%;
+    max-width: 500px;
+    max-height: 600px;
+    border-radius: 8px;
+}
+
+
+
+.herbert-kilpin {
+    margin-top: -2px;
+    margin-bottom: 200px;
+
+}
+
+
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+.torcidas > img {
+    margin-bottom: 150px;
+}
+
+.setimo-paragrafo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.kaka > img {
+    max-width: 500px;
+    max-height: 600px;
+    border-radius: 8px;
+    
+}
+
+.kaka > p {
+    margin-top: -2px;
+    margin-bottom: 250px;
+}
+
+
+
+.oitavo-paragrafo {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.seedorf > img {
+    max-width: 500px;
+    max-height: 600px;
+    border-radius: 8px;
+
+}
+
+.seedorf > p {
+    margin-top: -2px;
+    margin-bottom: 250px;
+}
+
+.nono-paragrafo {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+
+.decimo-paragrafo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 40px;
+}
+
+
+.italiano > img {
+    max-width: 500px;
+    max-height: 700px;
+    margin-bottom: 200px;
+}
+
+.ranking-italia > img {
+    max-width: 500px;
+    max-height: 700px;
+}

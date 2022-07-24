@@ -1,0 +1,143 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Milan</title>
+
+        <link rel="stylesheet" href="index.css">
+
+    </head>
+    <body>
+
+    <button class="btn-proximo">
+        <img src="seta1.svg" alt="">
+
+    </button>
+
+        <div class="slide slide-ativo" data-indice="0">
+
+            <h1> A derrocada e a volta por cima de um campeão</h1>
+
+            <div class="escudo-milan">
+                <img src="escudo-milan.jpg" alt="" />
+            </div>
+
+        
+
+        </div>
+
+        <div class="slide" data-indice="1">
+
+            <p class="primeiro-paragrafo"> Ao longo de sua história de 123 anos, o Associazione Calcio Milan, ou simplesmente A.C Milan, se consolidou como uma das grandes potências do futebol italiano.</p> 
+
+            <p class="segundo-paragrafo"> Nessas muitas décadas de jornada, foram 19 taças de campeão italiano, 5 Copas da Itália, 3 campeonatos intercontinentais, 7 campeonatos europeus e 1 título de  campeão do mundo.</p>
+
+            <div class="san-siro">
+                <img class="foto" src="San Siro.jpg" alt="" />
+            </div>
+
+            <p class="terceiro-paragrafo"> No final de maio, o Milan voltou a ser a primeira força da Itália ao bater o Sassuolo pelo placar de 3 X 0. E não foi um trófeu qualquer -  o trófeu voltou a ser conquistado após 11 anos.</p>
+                
+            <p class="quarto-paragrafo"> Mas o que levou a esse longo jejum?</p>
+            
+        </div>
+
+        <div class="slide" data-indice="2">
+        
+            <p class="quinto-paragrafo">Para os curiosos, o nome Milan foi escolhido em alusão à cidade de Milão (Milano, em italiano), na região da Lombardia, norte da Itália. Isso ocorreu em função das origens dos fundadores.</p>
+
+            <p class="sexto-paragrafo">Herbert Kilpin e Anfred Edwards eram ingleses e tiraram a instituição do papel em 1899 para disputar partidas de críquete. Mas foi no esporte mais popular do mundo que o time conseguiu milhares de fãs.</p>
+
+            <div class="herbert">
+                <img class="minifoto" src="Herbert Kilpin.jpg">
+                <p class="herbert-kilpin">Herbert Kilpin</p>
+            </div>
+        </div>    
+
+
+        <div class="slide" data-indice="3">
+
+            <h2>Ranking das maiores torcidas da Itália</h2>
+
+            <div class="torcidas">
+                <img class="foto" src="ranking.jpg">
+            </div>
+        </div>
+            
+        <div class="slide" data-indice="4">
+
+            <p class="setimo-paragrafo">Para se ter ideia do tamanho da instituição, fazem parte da história vencedora os holandeses Marco van Basten e Clarence Seedorf, os italiano Franco Baresi, Cesare Maldini e Alessandro Nesta, o ucraniano Andriy Shevchenko e o sueco Zlatan Ibrahimović. Brasileiros como Kaká, Dida, Cafú e Ronaldinho Gaúcho fizeram sucesso por lá.</p>
+            
+            <div class="kaka">
+                <img class="foto" src="Kaka.jpg">
+            <p class="kaka">Pelo Milan, Kaká foi eleito o melhor do mundo em 2007</p>
+            </div>
+        </div>
+
+        <div class="slide" data-indice="5">
+            <p class="oitavo-paragrafo">Ídolos do clube, muito ex-jogadores sem a experiência necessária na função assumiram a cadeira de técnico. Na última década, ex-jogadores como Seedorf, Filippo Inzaghi e Gennaro Gattuso tentaram comandar o time. Sem muito sucesso. </p>
+
+            <p class="nono-paragrafo">Dessa forma, o clube foi perdendo espaço entre os clubes italianos</p>
+
+            <div class="seedorf">
+                <img class="foto" src="Clarence Seedorf.jpg">
+                <p class="seedorf">Inzaghi (ao fundo) e Seedorf (à frente) comemoram gol pelo Milan </p>
+
+            </div>
+        </div>
+
+        <div class="slide" data-indice="6">
+            <h3> As posições do Milan nos últimos 11 anos </h3>
+
+            <div class="italiano">
+                <img class="foto" src="classificacao-milan.jpg" alt="" />
+            </div>
+        </div>
+                
+        <div class="slide" data-indice="7">
+
+            <p class="decimo-paragrafo"> Além disso, dados mostram que o Milan não gastou pouco em anos recentes. No entanto, enquanto os rivais gastavam mais, suas inúmeras contratações equivocadas. Dessa forma, foi perdendo espaço entre os clubes italianos. </p>
+
+            <h4>Movimentações nos últimos 5 anos</h4>
+
+            <div class="ranking-italia">
+                <img src="movimentacao.jpg" alt="" />
+            </div>
+
+        </div>
+
+        <script>
+
+        let botao = document.querySelector (".btn-proximo")
+        let indiceAtual = 0
+
+        botao.addEventListener ("click", passoSlide)
+
+        function passoSlide () {
+
+            let slideAtual = document.querySelector ("[data-indice='"+ indiceAtual + "']")
+
+            slideAtual.classList.remove('slide-ativo')
+
+            if (indiceAtual > 6) {
+                indiceAtual =-1
+
+            }
+            let proximoSlide = document.querySelector ("[data-indice='"+ (indiceAtual +1) + "']")
+
+            proximoSlide.classList.add('slide-ativo')
+  
+            indiceAtual ++
+
+            
+        } 
+        
+
+        </script>
+
+        
+    </body>
+</html>
+
